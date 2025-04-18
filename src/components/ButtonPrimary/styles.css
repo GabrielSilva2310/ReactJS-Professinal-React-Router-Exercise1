@@ -1,0 +1,14 @@
+.btn-primary{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 6px;
+    margin-top: 30px;
+    background-color: #FF2323;
+    font-weight: 700;
+    color: #FFFFFF;
+}

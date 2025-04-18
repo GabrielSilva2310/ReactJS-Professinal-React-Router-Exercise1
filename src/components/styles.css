@@ -1,0 +1,13 @@
+
+header{
+    background-color: #FF2323;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav h1{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
