@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles.css';
 
 export default function HeaderDefault(){
@@ -5,7 +6,7 @@ export default function HeaderDefault(){
     return(
         <header>
             <nav className='ex-container'>
-                <h1>Meu Site</h1>
+                <Link to={'/'}> <h1>Meu Site</h1> </Link>
             </nav>
         </header>
             
