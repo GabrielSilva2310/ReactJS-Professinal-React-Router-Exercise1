@@ -7,7 +7,7 @@
     height: 45px;
     border-radius: 6px;
     margin-top: 30px;
-    background-color: #FF2323;
+    background-color: var(--color-bg-secondary);
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--color-font-secundary);
 }
