@@ -1,23 +1,25 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import ButtonPrimary from './components/ButtonPrimary'
-import CardText from './components/CardText'
-import HeaderDefault from './components/HeaderDefault'
+import Home from './routes/Home';
+import HomeBody from './routes/Home/HomeBody'
+import Promotion from './routes/Home/Promotion';
+import Registration from './routes/Home/Registration';
+import NotFound from './routes/Home/NotFound';
+
 
 export default function App() {
   return (
-    <>
-    <HeaderDefault/>
-    <body>
-    <main>
-      <section className='ex-container'>
-        <CardText text='Página Inicial'/>
-        <ButtonPrimary text='Ver Promoção'/>
-      </section>
-    </main>
-      
-    </body>
-    </>
+    <BrowserRouter>
+    <Routes>
+         <Route path="/" element={<Home/>}> 
+         <Route index element={<HomeBody/>}/>
+         <Route path='/promotion' element={<Promotion/>} />
+         <Route path='/registration' element={<Registration/>} />
+         <Route path="*" element={<NotFound />} />
+         </Route>
+     </Routes>
+    </BrowserRouter>
   )
 }
 

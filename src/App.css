@@ -9,13 +9,26 @@
 
 
 .ex-container{
-
-  max-width: 100%;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 
 }
 
 body{
   background-color: #DADADA;
+}
+
+.mt30{
+  margin-top: 30px;
+}
+
+.mb30{
+
+  margin-bottom: 30px;
+
+}
+
+.dsflex{
+  display: flex;
 }
